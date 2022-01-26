@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./styles/styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+		rel="stylesheet">
+	<title>Ohmyfood</title>
+</head>
+
+<body>
+	<!--Logo-->
+	<header class="header">
+		<div class="header__logo">
+			<img src="images/ohmyfood.png" alt="Logo ohmyfood">
+		</div>
+	</header>
+	<!--Recherche-->
+	<div class="search">
+		<div class="search__bar">
+			<div class="search__btn">
+				<i class="fas fa-map-marker-alt"></i>
+			</div>
+			<input type="text" class="search__content" name="VilleChoisie" placeholder="Paris, Belleville">
+		</div>
+		<div class="intro">
+			<div class="intro__txt">
+				<h1>Réservez le menu qui vous convient</h1>
+			</div>
+			<div class="intro__txt">
+				<p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+			</div>
+			<div class="intro__txt">
+				<div class="intro__btn">
+					<a href="#restaurants">
+						<p>Explorer nos restaurants</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Liste fonctionnement -->
+	<article class="fonctionnement">
+		<h1>Fonctionnement</h1>
+		<div class="list">
+			<div class="list__item" href="#">
+				<div class="list__item__btn">1</div>
+				<i class="fas fa-mobile-alt"></i>
+				<p>Choisissez un restaurant</p>
+			</div>
+			<div class="list__item" href="#">
+				<div class="list__item__btn">2</div>
+				<i class="fas fa-list-ul"></i>
+				<p>Composez votre menu</p>
+			</div>
+			<div class="list__item" href="#">
+				<div class="list__item__btn">3</div>
+				<i class="fas fa-store"></i>
+				<p>Dégustez au restaurant</p>
+			</div>
+		</div>
+	</article>
+
+	<!-- Card Restaurants -->
+	<main id="Restaurants">
+		<h1>Restaurants</h1>
+
+		<article class="card">
+			<div class="card__new">
+				<div class="new">
+					<p>Nouveau</p>
+				</div>
+				<a href="menu_lapalette.html">
+					<img src="images/lapalette.jpg" alt="La palette du goût" class="card__img">
+				</a>
+			</div>
+			<div class="card__body">
+				<div class="card__txt">
+					<p><strong>La palette du goût</strong></p>
+					<p>Ménilmontant</p>
+				</div>
+				</a>
+				<div class="card__btn">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+		</article>
+
+
+	</main>
+
+	<footer>
+		<h4>ohmyfood</h4>
+		<div class="footer__container">
+			<div class="foot__text">
+				<a href="#"><i class="fas fa-utensils">Proposer un restaurant</i></a>
+			</div>
+			<div class="foot__text">
+				<a href="#"><i class="fas fa-hands-helping">Devenir partenaire</i></a>
+			</div>
+			<div class="foot__text">
+				<a href="#">Mentions légales</a>
+			</div>
+			<div class="foot__text">
+				<a href="#">Contact</a>
+			</div>
+		</div>
+
+	</footer>
+</body>
+
+</html>

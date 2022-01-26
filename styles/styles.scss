@@ -1,0 +1,174 @@
+@import 'couleurs';
+
+/*General*/
+h1, h2, h3
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    margin: 20px 10px 10px 10px;   
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+/*Header*/
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo img {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+}
+
+
+/****Recherche****/
+.search {
+    background-color: $gris2;
+
+    &__bar {
+        
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    &__content {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        color: black; 
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: 20px;
+        width: 40%;
+    }
+    
+}
+.intro {
+    background-color: $gris;
+    text-align: center;
+    
+
+    &__txt {
+        justify-content: center;
+        padding: 5px;
+    }
+    &__btn {
+        border-radius: 50px;
+        background-color: $primary-color;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    &__btn a {
+        text-decoration: none;
+        color: white;
+        padding: 0px;
+    }
+
+}
+
+/****Fonctionnement****/
+.list__item {
+    background-color: $gris;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px;
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+
+    .fas {
+        padding: 20px 20px 20px 30px;
+    }
+
+    &__btn {
+        border-radius: 100%;
+        padding: 10px 10px 5px 10px;
+        background-color: $primary-color;
+        color: white;
+        font-size: 14px;
+        position: absolute;
+        left: -10px;
+    }
+
+}
+
+/****Main****/
+#Restaurants {
+    background-color: $gris;
+
+.card {
+    border-radius: 20px;
+    background-color: white;
+    border: 0px solid white;
+    margin: 20px;
+
+    &__new {
+        position: relative;
+    }
+    .new {
+        position: absolute;
+        background-color: $tertiary-color;
+        top: 10px;
+        right: 10px;
+        color: $tertiary-color2;
+        padding: 10px;
+        font-size: 16px;
+        font-family: roboto;
+    }
+    
+    &__img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;  
+    }
+
+    &__body {
+        display: flex;
+        justify-content: flex-start; 
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        margin: 8px 0px 5px 10px;
+
+    }
+
+    &__btn {
+       display: flex;
+       
+        font-size: 22px;
+    }
+    .far:hover {
+        background-color: $primary-color;
+
+    }
+}
+}
+/*Footer*/
+footer {
+    background-color: $gris3;
+    color: white;
+
+    h4 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 22px;  
+    }
+
+    &__text a {
+        text-decoration: none;
+        color: white; 
+    }
+
+}
