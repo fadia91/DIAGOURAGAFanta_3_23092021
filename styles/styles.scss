@@ -135,7 +135,7 @@ header {
 
     &__body {
         display: flex;
-        justify-content: flex-start; 
+        justify-content: space-between; 
     }
 
     p {
@@ -147,7 +147,6 @@ header {
 
     &__btn {
        display: flex;
-       
         font-size: 22px;
     }
     .far:hover {

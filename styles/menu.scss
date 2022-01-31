@@ -1,13 +1,5 @@
 @import 'couleurs';
-h1
-{
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;  
-}
-p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-}
+
 /*Header*/
 
 header {
@@ -20,9 +12,18 @@ header {
     width: 200px;
     height: 40px;
 }
-/*Menu*/
+/*Titre*/
+h1
+{
+    font-family: 'Shrikhand', cursive;
+    font-size: 28px;  
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
 .menu {
-    border-radius: 20px 20px 0 0; 
+    border-radius: 30px 30px 0 0; 
     background-color: $gris;
     position: absolute;
     width: 100%;
@@ -34,7 +35,30 @@ header {
         position: relative;
         top: 40px;
     }
+    &__titre {
+        display: flex;
+        justify-content: space-between;
+    }
 }
+/*Menu*/
+.entr {
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between; 
+
+    &__check {
+        display: flex;
+        font-size: 22px;
+        color: white;
+        background-color: $tertiary-color;
+        cursor: pointer;
+        display: none;
+    }
+    
+}
+
 /*Footer*/
 footer {
     background-color: $gris3;
