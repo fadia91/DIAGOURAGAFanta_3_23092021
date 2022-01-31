@@ -51,7 +51,14 @@ p {
 }
 
 /*Menu*/
-.entr {
+.Entree {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: column;
+}
+
+.entree {
   background-color: white;
   border-radius: 20px;
   font-size: 20px;
@@ -63,15 +70,18 @@ p {
           justify-content: space-between;
 }
 
-.entr__check {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.entree__check {
+  display: none;
   font-size: 22px;
   color: white;
   background-color: #99E2D0;
   cursor: pointer;
-  display: none;
+}
+
+.entree .entree:hover .__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*Footer*/

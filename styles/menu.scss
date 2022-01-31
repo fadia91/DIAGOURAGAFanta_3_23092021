@@ -41,7 +41,13 @@ p {
     }
 }
 /*Menu*/
-.entr {
+
+.Entree {
+    justify-content: space-between;
+    display: column;
+}
+
+.entree {
     background-color: white;
     border-radius: 20px;
     font-size: 20px;
@@ -49,14 +55,15 @@ p {
     justify-content: space-between; 
 
     &__check {
-        display: flex;
+        display: none;
         font-size: 22px;
         color: white;
         background-color: $tertiary-color;
         cursor: pointer;
-        display: none;
     }
-    
+    .entree:hover .__check {
+        display: flex;
+    }
 }
 
 /*Footer*/
