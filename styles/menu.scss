@@ -17,16 +17,24 @@ h1
 {
     font-family: 'Shrikhand', cursive;
     font-size: 28px;  
+    margin: 20px;
 }
-p {
+h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+}
+
+h4, p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0px;
 }
 .menu {
     border-radius: 30px 30px 0 0; 
     background-color: $gris;
     position: absolute;
     width: 100%;
+    
     
     &__img {
         width: 100%;
@@ -38,36 +46,74 @@ p {
     &__titre {
         display: flex;
         justify-content: space-between;
+        font-size: 28px;
+        align-items: center;
+        cursor: pointer;
+        
+    }
+    &__titre:hover {
+        background-color: linear-gradient(#9356dc,#323031);
     }
 }
-/*Menu*/
-
-.Entrees {
-    justify-content: space-between;
-    display: column;
-    
-}
+/*Entree*/
 
 .entree {
-    background-color: white;
-    border-radius: 20px;
-    font-size: 20px;
     display: flex;
-    justify-content: space-between; 
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 20px;
     margin: 20px;
 
-    &__txt {
-        display: flex;
-        justify-content: space-between;
+    &__titre {
+        border-bottom: solid #99E2D0;
+        max-width: 43px;
+        padding-bottom: 5px;
+        margin: 20px;
     }
 
-    &__check {
-        display: none;
-        font-size: 22px;
-        color: white;
-        background-color: $tertiary-color;
+    &__txt {
+        padding: 10px;
         cursor: pointer;
     }
+
+    &__detail {
+        
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+    }
+
+    .check {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        font-size:22px;
+        color:white;
+        background-color: #99E2D0;
+        height:100%;
+        flex-wrap: wrap;
+    }
+}
+.entree__txt:hover .check
+{
+    display:flex;
+    font-size:22px;
+    color:white;
+    background-color: #99E2D0; 
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    z-index:15;
+    height:100%; min-height:69px;
+    max-width:58px;width:100%;
+    border-bottom-right-radius: 20px;border-top-right-radius: 20px;
+    flex-wrap: wrap;
+
+    margin-right: 0px;
+	/*transition-duration: 5.5s;*/transition-duration: 0.5s;
+	transition-timing-function: ease;
 }
 /*Footer*/
 footer {
