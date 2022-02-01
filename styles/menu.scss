@@ -34,7 +34,6 @@ h4, p {
 .menu {
     border-radius: 40px 40px 0 0; 
     background-color: $gris;
-    position: relative;
     bottom: -200px;
     width: 100%;
     
@@ -44,9 +43,7 @@ h4, p {
         width: 100%;
         height: 280px;
         object-fit: cover;
-        position: absolute; 
-        
-        
+        background: url(images/lapalette.jpg) no-repeat; 
     }
     &__titre {
         display: flex;
@@ -57,10 +54,11 @@ h4, p {
         margin: 20px;
         
     }
-    .far:hover {
-        background-color: linear-gradient(#9356dc,#323031);
-    }
 }
+.fa-heart:hover {
+    color: linear-gradient(#9356dc, #FF79DA);
+}
+
 /*Entree*/
 
 .entree, .plat, .dessert {
@@ -117,12 +115,23 @@ footer {
 
     h4 {
         font-family: 'Shrikhand', cursive;
-        font-size: 22px;  
+        font-size: 26px;
+        margin: 20px;  
     }
 
-    &__text a {
+    a {
         text-decoration: none;
-        color: white; 
+        padding: 20px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    .fas {
+        padding-right: 10px;
+    }
+
+    &__text {
+        padding: 20px;
+        
     }
 
 }

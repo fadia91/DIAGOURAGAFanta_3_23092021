@@ -59,7 +59,7 @@ header {
     }
     &__btn {
         border-radius: 50px;
-        background-color: $primary-color;
+        background: linear-gradient(#9356dc, #FF79DA);
         padding: 5px;
         display: flex;
         justify-content: center;
@@ -95,6 +95,7 @@ header {
         padding: 10px 10px 5px 10px;
         background-color: $primary-color;
         color: white;
+        font-family: 'Roboto', sans-serif;
         font-size: 14px;
         position: absolute;
         left: -10px;
@@ -150,7 +151,7 @@ header {
         font-size: 22px;
     }
     .far:hover {
-        background-color: $primary-color;
+        color: linear-gradient(#9356dc, #FF79DA);
 
     }
 }

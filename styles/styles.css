@@ -68,7 +68,8 @@ header {
 
 .intro__btn {
   border-radius: 50px;
-  background-color: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
+  background: linear-gradient(#9356dc, #FF79DA);
   padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,6 +113,7 @@ header {
   padding: 10px 10px 5px 10px;
   background-color: #9356DC;
   color: white;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   position: absolute;
   left: -10px;
@@ -175,7 +177,7 @@ header {
 }
 
 #Restaurants .card .far:hover {
-  background-color: #9356DC;
+  color: linear-gradient(#9356dc, #FF79DA);
 }
 
 /*Footer*/

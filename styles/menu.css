@@ -34,7 +34,6 @@ h4, p {
 .menu {
   border-radius: 40px 40px 0 0;
   background-color: #f8f7f7;
-  position: relative;
   bottom: -200px;
   width: 100%;
 }
@@ -44,7 +43,7 @@ h4, p {
   height: 280px;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
+  background: url(images/lapalette.jpg) no-repeat;
 }
 
 .menu__titre {
@@ -62,8 +61,8 @@ h4, p {
   margin: 20px;
 }
 
-.menu .far:hover {
-  background-color: linear-gradient(#9356dc, #323031);
+.fa-heart:hover {
+  color: linear-gradient(#9356dc, #FF79DA);
 }
 
 /*Entree*/
@@ -136,11 +135,22 @@ footer {
 
 footer h4 {
   font-family: 'Shrikhand', cursive;
-  font-size: 22px;
+  font-size: 26px;
+  margin: 20px;
 }
 
-footer__text a {
+footer a {
   text-decoration: none;
+  padding: 20px;
   color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+footer .fas {
+  padding-right: 10px;
+}
+
+footer__text {
+  padding: 20px;
 }
 /*# sourceMappingURL=menu.css.map */
