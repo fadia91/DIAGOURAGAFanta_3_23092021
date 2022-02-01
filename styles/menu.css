@@ -51,7 +51,7 @@ p {
 }
 
 /*Menu*/
-.Entree {
+.Entrees {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -68,6 +68,16 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 20px;
+}
+
+.entree__txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .entree__check {
@@ -76,12 +86,6 @@ p {
   color: white;
   background-color: #99E2D0;
   cursor: pointer;
-}
-
-.entree .entree:hover .__check {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 /*Footer*/

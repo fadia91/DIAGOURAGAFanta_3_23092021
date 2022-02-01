@@ -42,9 +42,10 @@ p {
 }
 /*Menu*/
 
-.Entree {
+.Entrees {
     justify-content: space-between;
     display: column;
+    
 }
 
 .entree {
@@ -53,6 +54,12 @@ p {
     font-size: 20px;
     display: flex;
     justify-content: space-between; 
+    margin: 20px;
+
+    &__txt {
+        display: flex;
+        justify-content: space-between;
+    }
 
     &__check {
         display: none;
@@ -61,11 +68,7 @@ p {
         background-color: $tertiary-color;
         cursor: pointer;
     }
-    .entree:hover .__check {
-        display: flex;
-    }
 }
-
 /*Footer*/
 footer {
     background-color: $gris3;
