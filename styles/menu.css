@@ -17,8 +17,8 @@ header {
 /*Titre*/
 h1 {
   font-family: 'Shrikhand', cursive;
-  font-size: 28px;
-  margin: 20px;
+  font-size: 30px;
+  font-style: unset;
 }
 
 h2 {
@@ -33,19 +33,19 @@ h4, p {
 }
 
 .menu {
-  border-radius: 30px 30px 0 0;
+  border-radius: 40px 40px 0 0;
   background-color: #f8f7f7;
-  position: absolute;
+  position: relative;
   width: 100%;
+  bottom: -200px;
 }
 
 .menu__img {
   width: 100%;
-  height: 260px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
-  top: 40px;
+  position: absolute;
 }
 
 .menu__titre {
@@ -60,9 +60,10 @@ h4, p {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  margin: 20px;
 }
 
-.menu__titre:hover {
+.menu .far:hover {
   background-color: linear-gradient(#9356dc, #323031);
 }
 
