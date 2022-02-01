@@ -6,6 +6,7 @@ header {
     display: flex;
     justify-content: center;
     position: relative;
+
 }
 
 .header__logo img {
@@ -18,7 +19,6 @@ h1
 {
     font-family: 'Shrikhand', cursive;
     font-size: 30px;
-    font-style: unset;
 
 }
 h2 {
@@ -28,22 +28,24 @@ h2 {
 
 h4, p {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0px;
 }
 .menu {
     border-radius: 40px 40px 0 0; 
     background-color: $gris;
     position: relative;
-    width: 100%;
     bottom: -200px;
+    width: 100%;
+    
     
     
     &__img {
         width: 100%;
-        height: 300px;
-        object-fit: cover; 
-        position: absolute;
+        height: 280px;
+        object-fit: cover;
+        position: absolute; 
+        
         
     }
     &__titre {
@@ -61,10 +63,11 @@ h4, p {
 }
 /*Entree*/
 
-.entree {
+.entree, .plat, .dessert {
     display: flex;
     flex-direction: column;
     background-color: white;
+    box-shadow: 8px 8px 5px #e7e7e7;
     border-radius: 15px;
     font-size: 20px;
     margin: 20px;
@@ -81,15 +84,20 @@ h4, p {
         cursor: pointer;
     }
 
+    &__sous {
+        padding: 5px 0 5px 0;
+    }
+
     &__detail {
         
         display: flex;
         justify-content: space-between;
         font-size: 18px;
+        padding: 5px 0 5px 0;
     }
 
     .check {
-        display: flex;
+        display: none;
         cursor: pointer;
         justify-content: center;
         align-items: center;
@@ -100,29 +108,12 @@ h4, p {
         flex-wrap: wrap;
     }
 }
-.entree__txt:hover .check
-{
-    display:flex;
-    font-size:22px;
-    color:white;
-    background-color: #99E2D0; 
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    z-index:15;
-    height:100%; min-height:69px;
-    max-width:58px;width:100%;
-    border-bottom-right-radius: 20px;border-top-right-radius: 20px;
-    flex-wrap: wrap;
 
-    margin-right: 0px;
-	/*transition-duration: 5.5s;*/transition-duration: 0.5s;
-	transition-timing-function: ease;
-}
 /*Footer*/
 footer {
     background-color: $gris3;
     color: white;
+    width: 100%;
 
     h4 {
         font-family: 'Shrikhand', cursive;
