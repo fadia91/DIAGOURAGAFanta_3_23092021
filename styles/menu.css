@@ -110,20 +110,24 @@ h4, p {
 }
 
 .entree .check, .plat .check, .dessert .check {
-  display: none;
-  cursor: pointer;
+  color: white;
+  background-color: #99E2D0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 22px;
-  color: white;
-  background-color: #99E2D0;
+  display: none;
   height: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 20%;
+}
+
+.entree__txt:hover .check, .plat__txt:hover .check, .dessert__txt:hover .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
 /*Footer*/

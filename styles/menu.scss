@@ -95,15 +95,17 @@ h4, p {
     }
 
     .check {
-        display: none;
-        cursor: pointer;
-        justify-content: center;
-        align-items: center;
-        font-size:22px;
         color:white;
         background-color: #99E2D0;
-        height:100%;
-        flex-wrap: wrap;
+        justify-content: center;
+        display: none;
+        height: 100%;
+        width: 20%;
+    }
+    &__txt:hover .check{
+        display: flex;
+        justify-content: center;
+        position: relative;
     }
 }
 

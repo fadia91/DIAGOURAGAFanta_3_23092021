@@ -56,9 +56,11 @@ header {
     &__txt {
         justify-content: space-between;
         padding: 5px;
+        display: -webkit-inline-box;
     }
     &__btn {
         border-radius: 50px;
+        width: 250px;
         background: linear-gradient(#9356dc, #FF79DA);
         padding: 5px;
         display: flex;

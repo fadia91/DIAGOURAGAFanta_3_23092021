@@ -64,10 +64,12 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 5px;
+  display: -webkit-inline-box;
 }
 
 .intro__btn {
   border-radius: 50px;
+  width: 250px;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
   background: linear-gradient(#9356dc, #FF79DA);
   padding: 5px;
