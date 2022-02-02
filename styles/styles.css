@@ -186,15 +186,26 @@ header {
 footer {
   background-color: #252424;
   color: white;
+  width: 100%;
 }
 
 footer h4 {
   font-family: 'Shrikhand', cursive;
-  font-size: 22px;
+  font-size: 20px;
+  padding: 20px 20px 20px 10px;
 }
 
-footer__text a {
+footer a {
   text-decoration: none;
+  padding: 10px;
   color: white;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .fas {
+  padding-right: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

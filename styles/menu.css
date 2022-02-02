@@ -89,9 +89,26 @@ h4, p {
   margin: 20px;
 }
 
+.entree .row, .plat .row, .dessert .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .entree__txt, .plat__txt, .dessert__txt {
   padding: 10px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .entree__sous, .plat__sous, .dessert__sous {
@@ -118,16 +135,22 @@ h4, p {
   display: none;
   height: 100%;
   width: 20%;
+  font-size: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100px;
+  position: relative;
+  border-radius: 0px 15px 15px 0px;
 }
 
-.entree__txt:hover .check, .plat__txt:hover .check, .dessert__txt:hover .check {
+.entree .row:hover .check, .plat .row:hover .check, .dessert .row:hover .check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
 }
 
 /*Footer*/
@@ -139,22 +162,21 @@ footer {
 
 footer h4 {
   font-family: 'Shrikhand', cursive;
-  font-size: 26px;
-  margin: 20px;
+  font-size: 20px;
+  padding: 20px 20px 20px 10px;
 }
 
 footer a {
   text-decoration: none;
-  padding: 20px;
+  padding: 10px;
   color: white;
   font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 footer .fas {
   padding-right: 10px;
-}
-
-footer__text {
-  padding: 20px;
 }
 /*# sourceMappingURL=menu.css.map */

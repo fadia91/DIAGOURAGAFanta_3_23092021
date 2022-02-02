@@ -162,15 +162,23 @@ header {
 footer {
     background-color: $gris3;
     color: white;
+    width: 100%;
 
     h4 {
         font-family: 'Shrikhand', cursive;
-        font-size: 22px;  
+        font-size: 20px;
+        padding: 20px 20px 20px 10px;  
     }
 
-    &__text a {
+    a {
         text-decoration: none;
-        color: white; 
+        padding: 10px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+    }
+    .fas {
+        padding-right: 10px;
     }
 
 }
