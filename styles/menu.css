@@ -34,8 +34,9 @@ h4, p {
 .menu {
   border-radius: 40px 40px 0 0;
   background-color: #f8f7f7;
-  bottom: -200px;
   width: 100%;
+  position: relative;
+  margin-top: 180px;
 }
 
 .menu__img {
@@ -44,6 +45,7 @@ h4, p {
   -o-object-fit: cover;
      object-fit: cover;
   background: url(images/lapalette.jpg) no-repeat;
+  position: absolute;
 }
 
 .menu__titre {
