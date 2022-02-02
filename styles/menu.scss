@@ -54,10 +54,26 @@ h4, p {
         margin: 20px;
         
     }
+    .fa-heart:hover {
+        color: linear-gradient(#9356dc, #FF79DA);
+    }
+
+    &__btn {
+        border-radius: 50px;
+        width: 100px;
+        background: linear-gradient(#9356dc, #FF79DA);
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    &__btn a {
+        text-decoration: none;
+        color: white;
+        padding: 0px;
+    }
+
 }
-.fa-heart:hover {
-    color: linear-gradient(#9356dc, #FF79DA);
-}
+
 
 /*Entree*/
 
@@ -123,7 +139,6 @@ h4, p {
         
     }
 }
-
 
 /*Footer*/
 footer {

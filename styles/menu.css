@@ -61,8 +61,28 @@ h4, p {
   margin: 20px;
 }
 
-.fa-heart:hover {
+.menu .fa-heart:hover {
   color: linear-gradient(#9356dc, #FF79DA);
+}
+
+.menu__btn {
+  border-radius: 50px;
+  width: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
+  background: linear-gradient(#9356dc, #FF79DA);
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__btn a {
+  text-decoration: none;
+  color: white;
+  padding: 0px;
 }
 
 /*Entree*/
