@@ -54,8 +54,21 @@ h4, p {
         margin: 20px;
         
     }
-    .fa-heart:hover {
-        color: linear-gradient(#9356dc, #FF79DA);
+    .coeurs {
+        position: relative;
+    }
+    .far {
+        position: absolute;
+    }
+    .fas {
+        background: linear-gradient(#9356dc, #FF79DA);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 0;
+    }
+    .fas:hover {
+        opacity: 1;
     }
 
     &__btn {
