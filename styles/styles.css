@@ -2,7 +2,6 @@
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
-  margin: 20px 10px 10px 10px;
 }
 
 p {
@@ -51,12 +50,25 @@ header {
   font-weight: bold;
   font-size: 16px;
   margin-left: 20px;
-  width: 40%;
 }
 
 .intro {
   background-color: #f8f7f7;
   text-align: center;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .intro__txt {
@@ -69,16 +81,9 @@ header {
 
 .intro__btn {
   border-radius: 50px;
-  width: 250px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
-  background: linear-gradient(#9356dc, #FF79DA);
-  padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  padding: 10px;
 }
 
 .intro__btn a {
@@ -104,6 +109,8 @@ header {
   padding: 10px;
   font-size: 20px;
   position: relative;
+  -webkit-box-shadow: 5px 5px 5px #e7e7e7;
+          box-shadow: 5px 5px 5px #e7e7e7;
 }
 
 .list__item .fas {
@@ -124,6 +131,11 @@ header {
 /****Main****/
 #Restaurants {
   background-color: #f8f7f7;
+  padding-bottom: 50px;
+}
+
+#Restaurants h1 {
+  padding: 70px 20px 10px 20px;
 }
 
 #Restaurants .card {
@@ -131,6 +143,8 @@ header {
   background-color: white;
   border: 0px solid white;
   margin: 20px;
+  -webkit-box-shadow: 8px 8px 5px #e7e7e7;
+          box-shadow: 8px 8px 5px #e7e7e7;
 }
 
 #Restaurants .card__new {
@@ -144,13 +158,14 @@ header {
   right: 10px;
   color: #46917e;
   padding: 10px;
-  font-size: 16px;
-  font-family: roboto;
+  font-size: 18px;
+  font-style: bold;
+  font-family: 'Roboto', sans-serif;
 }
 
 #Restaurants .card__img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px 10px 0 0;
@@ -165,21 +180,43 @@ header {
           justify-content: space-between;
 }
 
+#Restaurants .card__txt {
+  margin: 15px;
+}
+
 #Restaurants .card p {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  margin: 8px 0px 5px 10px;
+  margin: 0px;
+  padding-bottom: 5px;
 }
 
-#Restaurants .card__btn {
+#Restaurants .card__coeurs {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 22px;
+  font-size: 28px;
+  cursor: pointer;
+  margin: 20px;
 }
 
-#Restaurants .card .far:hover {
-  color: linear-gradient(#9356dc, #FF79DA);
+#Restaurants .card .far {
+  position: absolute;
+  border: none;
+}
+
+#Restaurants .card .fas {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+}
+
+#Restaurants .card .fas:hover {
+  opacity: 1;
 }
 
 /*Footer*/
@@ -193,6 +230,7 @@ footer h4 {
   font-family: 'Shrikhand', cursive;
   font-size: 20px;
   padding: 20px 20px 20px 10px;
+  margin: 0px;
 }
 
 footer a {

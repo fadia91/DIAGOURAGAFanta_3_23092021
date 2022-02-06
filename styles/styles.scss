@@ -4,8 +4,7 @@
 h1, h2, h3
 {
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    margin: 20px 10px 10px 10px;   
+    font-size: 28px;  
 }
 p {
     font-family: 'Roboto', sans-serif;
@@ -44,13 +43,17 @@ header {
         font-weight: bold;
         font-size: 16px;
         margin-left: 20px;
-        width: 40%;
     }
     
 }
 .intro {
-    background-color: $gris;
+    background-color: #f8f7f7;
     text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 
     &__txt {
@@ -60,11 +63,8 @@ header {
     }
     &__btn {
         border-radius: 50px;
-        width: 250px;
-        background: linear-gradient(#9356dc, #FF79DA);
-        padding: 5px;
-        display: flex;
-        justify-content: center;
+        background: linear-gradient($primary-color, $secondary-color);
+        padding: 10px;
         
     }
 
@@ -87,6 +87,7 @@ header {
     padding: 10px;
     font-size: 20px;
     position: relative;
+    box-shadow: 5px 5px 5px #e7e7e7;
 
     .fas {
         padding: 20px 20px 20px 30px;
@@ -108,12 +109,18 @@ header {
 /****Main****/
 #Restaurants {
     background-color: $gris;
+    padding-bottom: 50px;
 
-.card {
+    h1 {
+        padding: 70px 20px 10px 20px;
+    }
+    
+    .card {
     border-radius: 20px;
     background-color: white;
     border: 0px solid white;
     margin: 20px;
+    box-shadow: 8px 8px 5px #e7e7e7;
 
     &__new {
         position: relative;
@@ -125,13 +132,14 @@ header {
         right: 10px;
         color: $tertiary-color2;
         padding: 10px;
-        font-size: 16px;
-        font-family: roboto;
+        font-size: 18px;
+        font-style: bold;
+        font-family: 'Roboto', sans-serif;
     }
     
     &__img {
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;  
     }
@@ -141,20 +149,39 @@ header {
         justify-content: space-between; 
     }
 
+    &__txt {
+        margin: 15px;
+    }
+
     p {
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
-        margin: 8px 0px 5px 10px;
+        margin: 0px;
+        padding-bottom: 5px;
 
     }
 
-    &__btn {
-       display: flex;
-        font-size: 22px;
+    &__coeurs {
+        position: relative;
+        display: flex;
+        font-size: 28px;
+        cursor: pointer;
+        margin: 20px;
     }
-    .far:hover {
-        color: linear-gradient(#9356dc, #FF79DA);
-
+    .far {
+        position: absolute;
+        border: none;
+    }
+    .fas {
+        background: linear-gradient($primary-color, $secondary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 0;
+        
+    }
+    .fas:hover {
+        opacity: 1;
     }
 }
 }
@@ -168,6 +195,7 @@ footer {
         font-family: 'Shrikhand', cursive;
         font-size: 20px;
         padding: 20px 20px 20px 10px;  
+        margin: 0px;
     }
 
     a {

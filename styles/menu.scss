@@ -57,17 +57,17 @@ h4, p {
     .coeurs {
         position: relative;
     }
-    .far {
+    .coeurs .far {
         position: absolute;
     }
-    .fas {
+    .coeurs .fas {
         background: linear-gradient(#9356dc, #FF79DA);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         opacity: 0;
     }
-    .fas:hover {
+    .coeurs .fas:hover {
         opacity: 1;
     }
 

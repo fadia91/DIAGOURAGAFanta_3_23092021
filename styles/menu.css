@@ -67,11 +67,11 @@ h4, p {
   position: relative;
 }
 
-.menu .far {
+.menu .coeurs .far {
   position: absolute;
 }
 
-.menu .fas {
+.menu .coeurs .fas {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
   background: linear-gradient(#9356dc, #FF79DA);
   background-clip: text;
@@ -80,7 +80,7 @@ h4, p {
   opacity: 0;
 }
 
-.menu .fas:hover {
+.menu .coeurs .fas:hover {
   opacity: 1;
 }
 
