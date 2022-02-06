@@ -119,6 +119,11 @@ h4, p {
   border-radius: 15px;
   font-size: 20px;
   margin: 20px;
+  animation: fadein 5s;
+  -moz-animation: fadein 5s;
+  /* Firefox */
+  -webkit-animation: fadein 5s;
+  /* Safari et Chrome */
 }
 
 .entree__titre, .plat__titre, .dessert__titre {
@@ -190,6 +195,15 @@ h4, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
 }
 
 /*Footer*/

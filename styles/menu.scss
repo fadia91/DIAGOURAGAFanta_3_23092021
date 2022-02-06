@@ -31,6 +31,7 @@ h4, p {
     font-size: 16px;
     margin: 0px;
 }
+
 .menu {
     border-radius: 40px 40px 0 0; 
     background-color: $gris;
@@ -87,7 +88,6 @@ h4, p {
 
 }
 
-
 /*Entree*/
 
 .entree, .plat, .dessert {
@@ -99,6 +99,10 @@ h4, p {
     font-size: 20px;
     margin: 20px;
 
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari et Chrome */
+
     &__titre {
         border-bottom: solid #99E2D0;
         max-width: 43px;
@@ -109,8 +113,6 @@ h4, p {
         display: flex;
         justify-content: space-between;
     }
-
-
 
     &__txt {
         padding: 10px;
@@ -150,6 +152,14 @@ h4, p {
         display: flex;
         justify-content: center;
         
+    }
+}
+@-webkit-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:2;
     }
 }
 
