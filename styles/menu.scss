@@ -7,11 +7,21 @@ header {
     justify-content: center;
     position: relative;
 
-    &__logo img {
-        width: 200px;
-        height: 40px;
-    
+    .retour {
+        position: absolute;
+        left: 5px;
+        align-self: center;
+        font-size: 25px;
+        color: black;
     }
+    
+    .header__logo img {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    
+}
+
 
 }
 
@@ -36,14 +46,16 @@ h4, p {
     width: 100%;
     height: 300px;
     object-fit: cover;
-     
 }
+
 .menu {
     border-radius: 40px 40px 0 0; 
     background-color: $gris;
     width: 100%;
     position: relative;
     margin-top: -80px;
+    display: flex;
+    flex-direction: column;
     
     &__titre {
         display: flex;
@@ -78,6 +90,8 @@ h4, p {
         padding: 20px;
         display: flex;
         justify-content: center;
+        align-self: center;
+        margin: 50px;
     }
     &__btn a {
         text-decoration: none;
@@ -98,9 +112,8 @@ h4, p {
     font-size: 20px;
     margin: 20px;
 
-    animation: fadein 5s;
-    -moz-animation: fadein 5s; /* Firefox */
-    -webkit-animation: fadein 5s; /* Safari et Chrome */
+    animation-duration: 2.5s;
+    animation-name: slide-top;
 
     &__titre {
         border-bottom: solid #99E2D0;
@@ -143,21 +156,42 @@ h4, p {
         align-items: center;
         position: relative;
         border-radius: 0px 15px 15px 0px; 
+        cursor: pointer;
+        animation: 1s slidein;
     }
-    .row:hover .check{
+    .row:hover .check {
         display: flex;
         justify-content: center;
     }
-    .row:hover i.rotation /*pour faire tourner l'icône*/ {
-    animation: rotate-center 0.3s ease-in-out both;
+
+    .rotation {
+        transform: rotate(-360deg);
+        transition: transform 500ms ease-in-out;
+    }
+    .row:hover .rotation {
+        transform: rotate(0deg);
+    }
+
+
 }
-}
-@-webkit-keyframes fadein { 
+@keyframes slide-top { 
     from {
+        margin-top: 100%;
         opacity:0;
     }
     to {
+        margin-top: 0%;
         opacity:2;
+    }
+}
+@keyframes slidein { 
+    from {
+       
+        opacity:0;
+    }
+    to {
+        
+        opacity:1;
     }
 }
 

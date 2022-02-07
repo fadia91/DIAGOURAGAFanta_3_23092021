@@ -2,11 +2,13 @@
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
+  margin-bottom: 0px;
 }
 
 p {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
+  margin: 10px;
 }
 
 /*Header*/
@@ -49,7 +51,7 @@ header {
   color: black;
   font-weight: bold;
   font-size: 16px;
-  margin-left: 20px;
+  text-align: center;
 }
 
 .intro {

@@ -9,9 +9,20 @@ header {
   position: relative;
 }
 
-header__logo img {
+header .retour {
+  position: absolute;
+  left: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 25px;
+  color: black;
+}
+
+header .header__logo img {
   width: 200px;
   height: 40px;
+  margin: 10px;
 }
 
 /*Titre*/
@@ -44,6 +55,13 @@ h4, p {
   width: 100%;
   position: relative;
   margin-top: -80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .menu__titre {
@@ -94,6 +112,9 @@ h4, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 50px;
 }
 
 .menu__btn a {
@@ -117,11 +138,10 @@ h4, p {
   border-radius: 15px;
   font-size: 20px;
   margin: 20px;
-  animation: fadein 5s;
-  -moz-animation: fadein 5s;
-  /* Firefox */
-  -webkit-animation: fadein 5s;
-  /* Safari et Chrome */
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-name: slide-top;
+          animation-name: slide-top;
 }
 
 .entree__titre, .plat__titre, .dessert__titre {
@@ -182,6 +202,9 @@ h4, p {
           align-items: center;
   position: relative;
   border-radius: 0px 15px 15px 0px;
+  cursor: pointer;
+  -webkit-animation: 1s slidein;
+          animation: 1s slidein;
 }
 
 .entree .row:hover .check, .plat .row:hover .check, .dessert .row:hover .check {
@@ -193,17 +216,57 @@ h4, p {
           justify-content: center;
 }
 
-.entree .row:hover i.rotation, .plat .row:hover i.rotation, .dessert .row:hover i.rotation {
-  -webkit-animation: rotate-center 0.3s ease-in-out both;
-          animation: rotate-center 0.3s ease-in-out both;
+.entree .rotation, .plat .rotation, .dessert .rotation {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
-@-webkit-keyframes fadein {
+.entree .row:hover .rotation, .plat .row:hover .rotation, .dessert .row:hover .rotation {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+@-webkit-keyframes slide-top {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 2;
+  }
+}
+
+@keyframes slide-top {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 2;
+  }
+}
+
+@-webkit-keyframes slidein {
   from {
     opacity: 0;
   }
   to {
-    opacity: 2;
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
