@@ -20,6 +20,7 @@ header {
     width: 200px;
     height: 40px;
     margin: 10px;
+    cursor: pointer;
     
 }
 
@@ -199,7 +200,7 @@ h4, p {
         justify-content: center;
     }
     .rotation {
-        animation: 1s infinite alternate rotation;
+        animation: 1s rotation;
     }
     @keyframes rotation {
         0% {
@@ -233,4 +234,28 @@ footer {
         padding-right: 10px;
     }
 
+}
+@media screen and (min-width:768px)
+{
+    .lapalette img {
+        height: 400px;
+    }
+    h1 {
+        display: flex;
+        justify-content: center;
+        margin-right: 40px;
+    }
+
+    .menu {
+        margin-top: -50px;
+
+        &__titre {
+            justify-content: center;
+            align-items: baseline;
+        }
+        &_only {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
 }

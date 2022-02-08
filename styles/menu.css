@@ -30,6 +30,7 @@ header .header__logo img {
   width: 200px;
   height: 40px;
   margin: 10px;
+  cursor: pointer;
 }
 
 /*Titre*/
@@ -294,8 +295,8 @@ h4, p {
 }
 
 .entree .rotation, .plat .rotation, .dessert .rotation {
-  -webkit-animation: 1s infinite alternate rotation;
-          animation: 1s infinite alternate rotation;
+  -webkit-animation: 1s rotation;
+          animation: 1s rotation;
 }
 
 @-webkit-keyframes rotation {
@@ -345,5 +346,39 @@ footer a {
 
 footer .fas {
   padding-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .lapalette img {
+    height: 400px;
+  }
+  h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 40px;
+  }
+  .menu {
+    margin-top: -50px;
+  }
+  .menu__titre {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .menu_only {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 /*# sourceMappingURL=menu.css.map */
