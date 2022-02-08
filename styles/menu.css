@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/*survol des boutons principaux*/
+/*(gris clair background intro et main)*/
+/*(gris localisation clair background)*/
+/*gris foncé du footer*/
+/*ombre*/
+/*ombre plus foncée au survol*/
 /*Header*/
 header {
   display: -webkit-box;
@@ -88,8 +95,8 @@ h4, p {
 }
 
 .menu .coeurs .fas {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
-  background: linear-gradient(#9356dc, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -98,15 +105,15 @@ h4, p {
 
 .menu .coeurs .fas:hover {
   opacity: 1;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
 }
 
 .menu__btn {
   border-radius: 50px;
   width: 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
-  background: linear-gradient(#9356dc, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,8 +129,8 @@ h4, p {
 .menu__btn:hover {
   -webkit-box-shadow: 5px 5px 5px gray;
           box-shadow: 5px 5px 5px gray;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
 }
 
 .menu__btn a {
@@ -232,8 +239,8 @@ h4, p {
   position: relative;
   border-radius: 0px 15px 15px 0px;
   cursor: pointer;
-  -webkit-animation: 2s infinite slidein;
-          animation: 2s infinite slidein;
+  -webkit-animation: 2s infinite alternate slidein;
+          animation: 2s infinite alternate slidein;
 }
 
 @-webkit-keyframes slidein {
@@ -264,17 +271,30 @@ h4, p {
 }
 
 .entree .rotation, .plat .rotation, .dessert .rotation {
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-animation: 2s infinite alternate rotation;
+          animation: 2s infinite alternate rotation;
 }
 
-.entree .row:hover .rotation, .plat .row:hover .rotation, .dessert .row:hover .rotation {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 /*Footer*/

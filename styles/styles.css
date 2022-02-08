@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/*survol des boutons principaux*/
+/*(gris clair background intro et main)*/
+/*(gris localisation clair background)*/
+/*gris foncé du footer*/
+/*ombre*/
+/*ombre plus foncée au survol*/
 /*General*/
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
@@ -25,6 +32,7 @@ header {
   width: 200px;
   height: 40px;
   margin: 10px;
+  cursor: pointer;
 }
 
 /****Recherche****/
@@ -125,13 +133,18 @@ header {
   -webkit-box-shadow: 5px 5px 5px #e7e7e7;
           box-shadow: 5px 5px 5px #e7e7e7;
   cursor: pointer;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 .list__item:hover {
   -webkit-box-shadow: 5px 5px 5px gray;
           box-shadow: 5px 5px 5px gray;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  background-color: #9256dc04;
+}
+
+.list__item:hover .fas {
+  color: #9356DC;
 }
 
 .list__item .fas {
@@ -244,8 +257,8 @@ header {
 
 #Restaurants .card .fas:hover {
   opacity: 1;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 /*Footer*/

@@ -73,7 +73,7 @@ h4, p {
         position: absolute;
     }
     .coeurs .fas {
-        background: linear-gradient(#9356dc, #FF79DA);
+        background: linear-gradient($primary-color, $secondary-color);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -81,13 +81,13 @@ h4, p {
     }
     .coeurs .fas:hover {
         opacity: 1;
-        transition-duration: 2s;
+        transition-duration: 3s;
     }
 
     &__btn {
         border-radius: 50px;
         width: 100px;
-        background: linear-gradient(#9356dc, #FF79DA);
+        background: linear-gradient($primary-color, $secondary-color);
         padding: 20px;
         display: flex;
         justify-content: center;
@@ -95,8 +95,8 @@ h4, p {
         margin: 50px;
     }
     &__btn:hover {
-        box-shadow:5px 5px 5px gray;
-        transition-duration: 1s;
+        box-shadow:5px 5px 5px $shadow2;
+        transition-duration: 3s;
     }
     &__btn a {
         text-decoration: none;
@@ -112,7 +112,7 @@ h4, p {
     display: flex;
     flex-direction: column;
     background-color: white;
-    box-shadow: 8px 8px 5px #e7e7e7;
+    box-shadow: 8px 8px 5px $shadow1;
     border-radius: 15px;
     font-size: 20px;
     margin: 20px;
@@ -130,7 +130,7 @@ h4, p {
     }
 
     &__titre {
-        border-bottom: solid #99E2D0;
+        border-bottom: solid $tertiary-color;
         max-width: 43px;
         padding-bottom: 5px;
         margin: 20px;
@@ -171,7 +171,7 @@ h4, p {
         position: relative;
         border-radius: 0px 15px 15px 0px; 
         cursor: pointer;
-        animation: 2s infinite slidein;
+        animation: 2s infinite alternate slidein;
     }
     @keyframes slidein {
         from {
@@ -186,20 +186,18 @@ h4, p {
         display: flex;
         justify-content: center;
     }
-
     .rotation {
-        transform: rotate(-360deg);
-        transition: transform 500ms ease-in-out;
-
+        animation: 2s infinite alternate rotation;
     }
-    .row:hover .rotation {
-        transform: rotate(0deg);
+    @keyframes rotation {
+        0% {
+            transform: rotate(0);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
 }
-
-
-
-
 /*Footer*/
 footer {
     background-color: $gris3;

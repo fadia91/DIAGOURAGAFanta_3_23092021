@@ -25,6 +25,7 @@ header {
     width: 200px;
     height: 40px;
     margin: 10px;
+    cursor: pointer;
 }
 
 
@@ -51,7 +52,7 @@ header {
     
 }
 .intro {
-    background-color: #f8f7f7;
+    background-color: $gris;
     text-align: center;
     padding: 20px;
     display: flex;
@@ -69,12 +70,12 @@ header {
         border-radius: 50px;
         background: linear-gradient($primary-color, $secondary-color);
         padding: 10px;
-        box-shadow:5px 5px 5px #e7e7e7;
+        box-shadow:5px 5px 5px $shadow1;
     }
 
     &__btn:hover{ 
         background: linear-gradient($primary-color, $secondary-color);
-        box-shadow:5px 5px 5px gray;
+        box-shadow:5px 5px 5px $shadow2;
         transition-duration: 1s;
     }
     
@@ -98,12 +99,16 @@ header {
     padding: 10px;
     font-size: 20px;
     position: relative;
-    box-shadow: 5px 5px 5px #e7e7e7;
+    box-shadow: 5px 5px 5px $shadow1;
     cursor: pointer;
+    transition: all 1s ease-out;
     
     &:hover {
-        box-shadow:5px 5px 5px gray;
-        transition-duration: 1s;
+        box-shadow:5px 5px 5px $shadow2;
+        background-color: $hover;
+    }
+    &:hover .fas {
+        color: $primary-color;
     }
     .fas {
         padding: 20px 20px 20px 30px;
@@ -136,10 +141,10 @@ header {
     background-color: white;
     border: 0px solid white;
     margin: 20px;
-    box-shadow: 8px 8px 5px #e7e7e7;
+    box-shadow: 8px 8px 5px $shadow1;
 
     &:hover {
-        box-shadow:5px 5px 5px gray;
+        box-shadow:5px 5px 5px $shadow2;
         transition-duration: 1s;
     }
 
@@ -202,7 +207,7 @@ header {
     }
     .fas:hover {
         opacity: 1;
-        transition-duration: 2s;
+        transition: all 2s ease-in-out;
     }
 }
 }
