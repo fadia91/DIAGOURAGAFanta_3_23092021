@@ -65,8 +65,8 @@ h4, p {
         align-items: center;
         cursor: pointer;
         margin: 20px;
-        
     }
+
     .coeurs {
         position: relative;
     }
@@ -159,10 +159,15 @@ h4, p {
         display: flex;
         width: 100%;
         flex-direction: column;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__sous {
         padding: 5px 0 5px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     &__detail {
@@ -171,6 +176,14 @@ h4, p {
         justify-content: space-between;
         font-size: 18px;
         padding: 5px 0 5px 0;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .check {
@@ -246,16 +259,4 @@ footer {
         margin-right: 40px;
     }
 
-    .menu {
-        margin-top: -50px;
-
-        &__titre {
-            justify-content: center;
-            align-items: baseline;
-        }
-        &_only {
-            display: flex;
-            justify-content: space-evenly;
-        }
-    }
 }

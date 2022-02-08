@@ -231,10 +231,15 @@ h4, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .entree__sous, .plat__sous, .dessert__sous {
   padding: 5px 0 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .entree__detail, .plat__detail, .dessert__detail {
@@ -246,6 +251,18 @@ h4, p {
           justify-content: space-between;
   font-size: 18px;
   padding: 5px 0 5px 0;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.entree p, .plat p, .dessert p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .entree .check, .plat .check, .dessert .check {
@@ -360,25 +377,6 @@ footer .fas {
         -ms-flex-pack: center;
             justify-content: center;
     margin-right: 40px;
-  }
-  .menu {
-    margin-top: -50px;
-  }
-  .menu__titre {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
-  .menu_only {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
   }
 }
 /*# sourceMappingURL=menu.css.map */
