@@ -5,6 +5,46 @@
 /*gris foncé du footer*/
 /*ombre*/
 /*ombre plus foncée au survol*/
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fcf;
+  border-color: #fcf transparent #fcf transparent;
+  -webkit-animation: lds-dual-ring 1.2s linear infinite;
+          animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@-webkit-keyframes lds-dual-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 /*General*/
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
@@ -99,8 +139,8 @@ header {
 }
 
 .intro__btn:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
   -webkit-box-shadow: 5px 5px 5px gray;
           box-shadow: 5px 5px 5px gray;
   -webkit-transition-duration: 1s;
@@ -140,7 +180,7 @@ header {
 .list__item:hover {
   -webkit-box-shadow: 5px 5px 5px gray;
           box-shadow: 5px 5px 5px gray;
-  background-color: #9256dc04;
+  background-color: #f73bc827;
 }
 
 .list__item:hover .fas {
@@ -256,9 +296,28 @@ header {
 }
 
 #Restaurants .card .fas:hover {
-  opacity: 1;
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
+  -webkit-animation: 300ms linear forwards hearthover;
+          animation: 300ms linear forwards hearthover;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+@-webkit-keyframes hearthover {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hearthover {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*Footer*/

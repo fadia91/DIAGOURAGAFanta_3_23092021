@@ -1,5 +1,6 @@
 @import 'couleurs';
 
+
 /*Header*/
 
 header {
@@ -21,7 +22,6 @@ header {
     margin: 10px;
     
 }
-
 
 }
 
@@ -80,8 +80,18 @@ h4, p {
         opacity: 0;
     }
     .coeurs .fas:hover {
-        opacity: 1;
-        transition-duration: 3s;
+        animation: 300ms linear forwards hearthover;
+        filter: brightness(120%);
+    }
+    @keyframes hearthover {
+        0% 
+        {
+            opacity: 0;
+        }
+        100% 
+        {
+            opacity: 1;
+        }
     }
 
     &__btn {
@@ -93,10 +103,12 @@ h4, p {
         justify-content: center;
         align-self: center;
         margin: 50px;
+        box-shadow: 5px 5px 5px $shadow1;
     }
     &__btn:hover {
+        filter: brightness(120%);
         box-shadow:5px 5px 5px $shadow2;
-        transition-duration: 3s;
+        transition-duration: 1s;
     }
     &__btn a {
         text-decoration: none;
@@ -171,7 +183,7 @@ h4, p {
         position: relative;
         border-radius: 0px 15px 15px 0px; 
         cursor: pointer;
-        animation: 2s infinite alternate slidein;
+        animation: 1s infinite alternate slidein;
     }
     @keyframes slidein {
         from {
@@ -187,7 +199,7 @@ h4, p {
         justify-content: center;
     }
     .rotation {
-        animation: 2s infinite alternate rotation;
+        animation: 1s infinite alternate rotation;
     }
     @keyframes rotation {
         0% {

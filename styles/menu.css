@@ -104,9 +104,28 @@ h4, p {
 }
 
 .menu .coeurs .fas:hover {
-  opacity: 1;
-  -webkit-transition-duration: 3s;
-          transition-duration: 3s;
+  -webkit-animation: 300ms linear forwards hearthover;
+          animation: 300ms linear forwards hearthover;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+@-webkit-keyframes hearthover {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hearthover {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .menu__btn {
@@ -124,13 +143,17 @@ h4, p {
   -ms-flex-item-align: center;
       align-self: center;
   margin: 50px;
+  -webkit-box-shadow: 5px 5px 5px #e7e7e7;
+          box-shadow: 5px 5px 5px #e7e7e7;
 }
 
 .menu__btn:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
   -webkit-box-shadow: 5px 5px 5px gray;
           box-shadow: 5px 5px 5px gray;
-  -webkit-transition-duration: 3s;
-          transition-duration: 3s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .menu__btn a {
@@ -239,8 +262,8 @@ h4, p {
   position: relative;
   border-radius: 0px 15px 15px 0px;
   cursor: pointer;
-  -webkit-animation: 2s infinite alternate slidein;
-          animation: 2s infinite alternate slidein;
+  -webkit-animation: 1s infinite alternate slidein;
+          animation: 1s infinite alternate slidein;
 }
 
 @-webkit-keyframes slidein {
@@ -271,8 +294,8 @@ h4, p {
 }
 
 .entree .rotation, .plat .rotation, .dessert .rotation {
-  -webkit-animation: 2s infinite alternate rotation;
-          animation: 2s infinite alternate rotation;
+  -webkit-animation: 1s infinite alternate rotation;
+          animation: 1s infinite alternate rotation;
 }
 
 @-webkit-keyframes rotation {

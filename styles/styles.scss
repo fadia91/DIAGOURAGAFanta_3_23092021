@@ -1,5 +1,28 @@
 @import 'couleurs';
-
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+      
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fcf;
+    border-color: #fcf transparent #fcf transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 /*General*/
 h1, h2, h3
 {
@@ -60,7 +83,6 @@ header {
     justify-content: center;
     align-items: center;
     
-
     &__txt {
         justify-content: space-between;
         padding: 5px;
@@ -74,7 +96,7 @@ header {
     }
 
     &__btn:hover{ 
-        background: linear-gradient($primary-color, $secondary-color);
+        filter: brightness(120%);
         box-shadow:5px 5px 5px $shadow2;
         transition-duration: 1s;
     }
@@ -203,11 +225,21 @@ header {
         -webkit-background-clip: text;
         color: transparent;
         opacity: 0;
-        
     }
     .fas:hover {
-        opacity: 1;
-        transition: all 2s ease-in-out;
+        animation: 300ms linear forwards hearthover;
+        filter: brightness(120%);
+    }
+
+    @keyframes hearthover {
+        0% 
+        {
+            opacity: 0;
+        }
+        100% 
+        {
+            opacity: 1;
+        }
     }
 }
 }
