@@ -69,8 +69,15 @@ header {
         border-radius: 50px;
         background: linear-gradient($primary-color, $secondary-color);
         padding: 10px;
-        
+        box-shadow:5px 5px 5px #e7e7e7;
     }
+
+    &__btn:hover{ 
+        background: linear-gradient($primary-color, $secondary-color);
+        box-shadow:5px 5px 5px gray;
+        transition-duration: 1s;
+    }
+    
 
     &__btn a {
         text-decoration: none;
@@ -92,7 +99,12 @@ header {
     font-size: 20px;
     position: relative;
     box-shadow: 5px 5px 5px #e7e7e7;
-
+    cursor: pointer;
+    
+    &:hover {
+        box-shadow:5px 5px 5px gray;
+        transition-duration: 1s;
+    }
     .fas {
         padding: 20px 20px 20px 30px;
     }
@@ -125,6 +137,11 @@ header {
     border: 0px solid white;
     margin: 20px;
     box-shadow: 8px 8px 5px #e7e7e7;
+
+    &:hover {
+        box-shadow:5px 5px 5px gray;
+        transition-duration: 1s;
+    }
 
     &__new {
         position: relative;
@@ -174,7 +191,6 @@ header {
     }
     .far {
         position: absolute;
-        border: none;
     }
     .fas {
         background: linear-gradient($primary-color, $secondary-color);
@@ -186,6 +202,7 @@ header {
     }
     .fas:hover {
         opacity: 1;
+        transition-duration: 2s;
     }
 }
 }

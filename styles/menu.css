@@ -98,6 +98,8 @@ h4, p {
 
 .menu .coeurs .fas:hover {
   opacity: 1;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
 }
 
 .menu__btn {
@@ -115,6 +117,13 @@ h4, p {
   -ms-flex-item-align: center;
       align-self: center;
   margin: 50px;
+}
+
+.menu__btn:hover {
+  -webkit-box-shadow: 5px 5px 5px gray;
+          box-shadow: 5px 5px 5px gray;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .menu__btn a {
@@ -138,10 +147,30 @@ h4, p {
   border-radius: 15px;
   font-size: 20px;
   margin: 20px;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-name: slide-top;
-          animation-name: slide-top;
+  -webkit-animation: slidetop 2.5s;
+          animation: slidetop 2.5s;
+}
+
+@-webkit-keyframes slidetop {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 2;
+  }
+}
+
+@keyframes slidetop {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 2;
+  }
 }
 
 .entree__titre, .plat__titre, .dessert__titre {
@@ -203,8 +232,8 @@ h4, p {
   position: relative;
   border-radius: 0px 15px 15px 0px;
   cursor: pointer;
-  -webkit-animation: 1s slidein;
-          animation: 1s slidein;
+  -webkit-animation: 3s linear 1s infinite alternate slidein;
+          animation: 3s linear 1s infinite alternate slidein;
 }
 
 .entree .row:hover .check, .plat .row:hover .check, .dessert .row:hover .check {
@@ -228,46 +257,6 @@ h4, p {
 .entree .row:hover .rotation, .plat .row:hover .rotation, .dessert .row:hover .rotation {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-}
-
-@-webkit-keyframes slide-top {
-  from {
-    margin-top: 100%;
-    opacity: 0;
-  }
-  to {
-    margin-top: 0%;
-    opacity: 2;
-  }
-}
-
-@keyframes slide-top {
-  from {
-    margin-top: 100%;
-    opacity: 0;
-  }
-  to {
-    margin-top: 0%;
-    opacity: 2;
-  }
-}
-
-@-webkit-keyframes slidein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slidein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /*Footer*/

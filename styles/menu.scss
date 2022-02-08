@@ -81,6 +81,7 @@ h4, p {
     }
     .coeurs .fas:hover {
         opacity: 1;
+        transition-duration: 2s;
     }
 
     &__btn {
@@ -92,6 +93,10 @@ h4, p {
         justify-content: center;
         align-self: center;
         margin: 50px;
+    }
+    &__btn:hover {
+        box-shadow:5px 5px 5px gray;
+        transition-duration: 1s;
     }
     &__btn a {
         text-decoration: none;
@@ -111,9 +116,18 @@ h4, p {
     border-radius: 15px;
     font-size: 20px;
     margin: 20px;
+    animation: slidetop 2.5s;
 
-    animation-duration: 2.5s;
-    animation-name: slide-top;
+    @keyframes slidetop { 
+        from {
+            margin-top: 100%;
+            opacity:0;
+        }
+        to {
+            margin-top: 0%;
+            opacity:2;
+        }
+    }
 
     &__titre {
         border-bottom: solid #99E2D0;
@@ -157,7 +171,7 @@ h4, p {
         position: relative;
         border-radius: 0px 15px 15px 0px; 
         cursor: pointer;
-        animation: 1s slidein;
+        animation: 3s linear 1s infinite alternate slidein;
     }
     .row:hover .check {
         display: flex;
@@ -167,31 +181,10 @@ h4, p {
     .rotation {
         transform: rotate(-360deg);
         transition: transform 500ms ease-in-out;
+
     }
     .row:hover .rotation {
         transform: rotate(0deg);
-    }
-
-
-}
-@keyframes slide-top { 
-    from {
-        margin-top: 100%;
-        opacity:0;
-    }
-    to {
-        margin-top: 0%;
-        opacity:2;
-    }
-}
-@keyframes slidein { 
-    from {
-       
-        opacity:0;
-    }
-    to {
-        
-        opacity:1;
     }
 }
 

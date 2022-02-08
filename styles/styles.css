@@ -86,6 +86,17 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   padding: 10px;
+  -webkit-box-shadow: 5px 5px 5px #e7e7e7;
+          box-shadow: 5px 5px 5px #e7e7e7;
+}
+
+.intro__btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-box-shadow: 5px 5px 5px gray;
+          box-shadow: 5px 5px 5px gray;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .intro__btn a {
@@ -113,6 +124,14 @@ header {
   position: relative;
   -webkit-box-shadow: 5px 5px 5px #e7e7e7;
           box-shadow: 5px 5px 5px #e7e7e7;
+  cursor: pointer;
+}
+
+.list__item:hover {
+  -webkit-box-shadow: 5px 5px 5px gray;
+          box-shadow: 5px 5px 5px gray;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .list__item .fas {
@@ -147,6 +166,13 @@ header {
   margin: 20px;
   -webkit-box-shadow: 8px 8px 5px #e7e7e7;
           box-shadow: 8px 8px 5px #e7e7e7;
+}
+
+#Restaurants .card:hover {
+  -webkit-box-shadow: 5px 5px 5px gray;
+          box-shadow: 5px 5px 5px gray;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 #Restaurants .card__new {
@@ -205,7 +231,6 @@ header {
 
 #Restaurants .card .far {
   position: absolute;
-  border: none;
 }
 
 #Restaurants .card .fas {
@@ -219,6 +244,8 @@ header {
 
 #Restaurants .card .fas:hover {
   opacity: 1;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
 }
 
 /*Footer*/
