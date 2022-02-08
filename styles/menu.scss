@@ -171,8 +171,17 @@ h4, p {
         position: relative;
         border-radius: 0px 15px 15px 0px; 
         cursor: pointer;
-        animation: 3s linear 1s infinite alternate slidein;
+        animation: 2s infinite slidein;
     }
+    @keyframes slidein {
+        from {
+            width:0;
+        }
+      
+        to {
+            width:20%;
+        }
+      }
     .row:hover .check {
         display: flex;
         justify-content: center;

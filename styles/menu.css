@@ -232,8 +232,26 @@ h4, p {
   position: relative;
   border-radius: 0px 15px 15px 0px;
   cursor: pointer;
-  -webkit-animation: 3s linear 1s infinite alternate slidein;
-          animation: 3s linear 1s infinite alternate slidein;
+  -webkit-animation: 2s infinite slidein;
+          animation: 2s infinite slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
 }
 
 .entree .row:hover .check, .plat .row:hover .check, .dessert .row:hover .check {
