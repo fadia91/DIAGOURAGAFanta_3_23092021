@@ -1,6 +1,61 @@
 @import 'couleurs';
 
 /*General*/
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    height: 100vh;
+}
+.loader {
+    background: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 15;
+    opacity: 1;
+    animation: fade 500ms 3s forwards; 
+}
+@keyframes fade {
+    to {
+        opacity: 0;
+    }
+}
+
+.loader div {
+    background: $primary-color;
+    width: 16px;
+    height: 32px;
+    margin-left: 10px;
+    animation: loader 1.2s infinite;
+    
+}
+@keyframes loader {
+    50%{
+        height: 64px;
+    }
+}
+.loader div:nth-child(1) {
+    background: linear-gradient($primary-color, $secondary-color);
+    animation-delay: -0.40s ;
+}
+.loader div:nth-child(2) {
+    background: linear-gradient($primary-color, $secondary-color);
+    animation-delay: -0.20s ;
+}
+.loader div:nth-child(3) {
+    background: linear-gradient($primary-color, $secondary-color);
+    animation-delay: 0 ;
+}
+
+
+
+
+
+
 h1, h2, h3
 {
     font-family: 'Roboto', sans-serif;

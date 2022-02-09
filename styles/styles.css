@@ -6,6 +6,87 @@
 /*ombre*/
 /*ombre plus foncée au survol*/
 /*General*/
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  height: 100vh;
+}
+
+.loader {
+  background: white;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 15;
+  opacity: 1;
+  -webkit-animation: fade 500ms 3s forwards;
+          animation: fade 500ms 3s forwards;
+}
+
+@-webkit-keyframes fade {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 0;
+  }
+}
+
+.loader div {
+  background: #9356DC;
+  width: 16px;
+  height: 32px;
+  margin-left: 10px;
+  -webkit-animation: loader 1.2s infinite;
+          animation: loader 1.2s infinite;
+}
+
+@-webkit-keyframes loader {
+  50% {
+    height: 64px;
+  }
+}
+
+@keyframes loader {
+  50% {
+    height: 64px;
+  }
+}
+
+.loader div:nth-child(1) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-animation-delay: -0.40s;
+          animation-delay: -0.40s;
+}
+
+.loader div:nth-child(2) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-animation-delay: -0.20s;
+          animation-delay: -0.20s;
+}
+
+.loader div:nth-child(3) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
