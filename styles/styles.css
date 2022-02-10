@@ -83,8 +83,6 @@ body {
 .loader div:nth-child(3) {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
 }
 
 h1, h2, h3 {
@@ -129,6 +127,9 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .search__content {
@@ -281,7 +282,6 @@ header {
   color: #46917e;
   padding: 10px;
   font-size: 18px;
-  font-style: bold;
   font-family: 'Roboto', sans-serif;
 }
 

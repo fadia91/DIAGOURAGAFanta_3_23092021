@@ -48,7 +48,6 @@ body {
 }
 .loader div:nth-child(3) {
     background: linear-gradient($primary-color, $secondary-color);
-    animation-delay: 0 ;
 }
 
 
@@ -91,6 +90,7 @@ header {
         display: flex;
         justify-content: center;
         padding: 20px;
+        align-items: center;
     }
 
     &__content {
@@ -211,7 +211,6 @@ header {
         color: $tertiary-color2;
         padding: 10px;
         font-size: 18px;
-        font-style: bold;
         font-family: 'Roboto', sans-serif;
     }
     
