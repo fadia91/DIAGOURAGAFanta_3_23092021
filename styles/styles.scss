@@ -20,6 +20,7 @@ body {
     opacity: 1;
     z-index: 15;
     animation: fade 500ms 3s forwards; 
+    -webkit-animation: fade 500ms 3s forwards; 
 }
 @keyframes fade {
     to {
@@ -33,6 +34,7 @@ body {
     height: 32px;
     margin-left: 10px;
     animation: loader 1s infinite;
+    -webkit-animation: loader 1s infinite;
     
 }
 @keyframes loader {
@@ -42,20 +44,19 @@ body {
 }
 .loader div:nth-child(1) {
     background: linear-gradient($primary-color, $secondary-color);
+    -webkit-animation-delay: -0.40s ;
     animation-delay: -0.40s ;
+
 }
 .loader div:nth-child(2) {
     background: linear-gradient($primary-color, $secondary-color);
+    -webkit-animation-delay: -0.20s ;
     animation-delay: -0.20s ;
+    
 }
 .loader div:nth-child(3) {
     background: linear-gradient($primary-color, $secondary-color);
 }
-
-
-
-
-
 
 h1, h2, h3
 {

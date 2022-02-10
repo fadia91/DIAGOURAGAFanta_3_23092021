@@ -32,8 +32,8 @@ body {
   /*pour résoudre le problème des liens*/
   opacity: 1;
   z-index: 15;
+  animation: fade 500ms 3s forwards;
   -webkit-animation: fade 500ms 3s forwards;
-          animation: fade 500ms 3s forwards;
 }
 
 @-webkit-keyframes fade {
@@ -53,8 +53,8 @@ body {
   width: 16px;
   height: 32px;
   margin-left: 10px;
+  animation: loader 1s infinite;
   -webkit-animation: loader 1s infinite;
-          animation: loader 1s infinite;
 }
 
 @-webkit-keyframes loader {
@@ -73,14 +73,14 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-animation-delay: -0.40s;
-          animation-delay: -0.40s;
+  animation-delay: -0.40s;
 }
 
 .loader div:nth-child(2) {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-animation-delay: -0.20s;
-          animation-delay: -0.20s;
+  animation-delay: -0.20s;
 }
 
 .loader div:nth-child(3) {

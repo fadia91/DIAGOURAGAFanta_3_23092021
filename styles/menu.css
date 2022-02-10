@@ -105,8 +105,8 @@ h4, p {
 }
 
 .menu .coeurs .fas:hover {
+  animation: 300ms linear forwards hearthover;
   -webkit-animation: 300ms linear forwards hearthover;
-          animation: 300ms linear forwards hearthover;
   -webkit-filter: brightness(120%);
           filter: brightness(120%);
 }
@@ -178,8 +178,8 @@ h4, p {
   border-radius: 15px;
   font-size: 20px;
   margin: 20px;
+  animation: slidetop 2.5s;
   -webkit-animation: slidetop 2.5s;
-          animation: slidetop 2.5s;
 }
 
 @-webkit-keyframes slidetop {
@@ -280,8 +280,8 @@ h4, p {
   position: relative;
   border-radius: 0px 15px 15px 0px;
   cursor: pointer;
-  -webkit-animation: 1s infinite alternate slidein;
-          animation: 1s infinite alternate slidein;
+  animation: 1s alternate slidein;
+  -webkit-animation: 1s alternate slidein;
 }
 
 @-webkit-keyframes slidein {
@@ -312,29 +312,29 @@ h4, p {
 }
 
 .entree .rotation, .plat .rotation, .dessert .rotation {
+  animation: 1s rotation;
   -webkit-animation: 1s rotation;
-          animation: 1s rotation;
 }
 
 @-webkit-keyframes rotation {
   0% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(0);
   }
 }
 
 @keyframes rotation {
   0% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(0);
   }
 }
 
