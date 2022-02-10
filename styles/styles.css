@@ -13,6 +13,7 @@ body {
   height: 100vh;
 }
 
+/*Loader 3s**/
 .loader {
   background: white;
   width: 100%;
@@ -52,8 +53,8 @@ body {
   width: 16px;
   height: 32px;
   margin-left: 10px;
-  -webkit-animation: loader 1.2s infinite;
-          animation: loader 1.2s infinite;
+  -webkit-animation: loader 1s infinite;
+          animation: loader 1s infinite;
 }
 
 @-webkit-keyframes loader {
