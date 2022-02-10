@@ -220,6 +220,8 @@ header {
   cursor: pointer;
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
+  text-decoration: none;
+  color: black;
 }
 
 .list__item:hover {

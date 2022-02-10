@@ -157,6 +157,8 @@ header {
     box-shadow: 5px 5px 5px $shadow1;
     cursor: pointer;
     transition: all 1s ease-out;
+    text-decoration: none;
+    color: black;
     
     &:hover {
         box-shadow:5px 5px 5px $shadow2;
