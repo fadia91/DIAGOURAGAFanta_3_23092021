@@ -15,8 +15,9 @@ body {
     justify-content: center;
     align-items: center;
     position: fixed;
-    z-index: 15;
+    pointer-events: none;/*pour résoudre le problème des liens*/
     opacity: 1;
+    z-index: 15;
     animation: fade 500ms 3s forwards; 
 }
 @keyframes fade {
