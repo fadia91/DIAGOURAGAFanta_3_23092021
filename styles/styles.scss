@@ -19,8 +19,8 @@ body {
     pointer-events: none;/*pour résoudre le problème des liens*/
     opacity: 1;
     z-index: 15;
-    animation: fade 500ms 3s forwards; 
-    -webkit-animation: fade 500ms 3s forwards; 
+    animation: fade 400ms 2s forwards; 
+    -webkit-animation: fade 400ms 2s forwards; 
 }
 @keyframes fade {
     to {
@@ -63,6 +63,7 @@ h1, h2, h3
     font-family: 'Roboto', sans-serif;
     font-size: 28px;  
     margin-bottom: 0px;
+    margin-left: 30px;
 }
 p {
     font-family: 'Roboto', sans-serif;
@@ -126,21 +127,19 @@ header {
         background: linear-gradient($primary-color, $secondary-color);
         padding: 10px;
         box-shadow:5px 5px 5px $shadow1;
+        transform: scale(1);
+        transition: transform 400ms;
     }
-
     &__btn:hover{ 
         filter: brightness(120%);
+        transform: scale(1.05);
         box-shadow:5px 5px 5px $shadow2;
-        transition-duration: 1s;
     }
-    
-
     &__btn a {
         text-decoration: none;
         color: white;
         padding: 0px;
     }
-
 }
 
 /****Fonctionnement****/
@@ -156,13 +155,19 @@ header {
     position: relative;
     box-shadow: 5px 5px 5px $shadow1;
     cursor: pointer;
-    transition: all 1s ease-out;
+    transform: scale(1);
+    transition: transform 400ms;
+    
     text-decoration: none;
     color: black;
     
     &:hover {
         box-shadow:5px 5px 5px $shadow2;
         background-color: $hover;
+        color: $primary-color;
+        font-weight: bold;
+        transform: scale(1.05);
+        box-shadow:5px 5px 5px $shadow2;
     }
     &:hover .fas {
         color: $primary-color;
@@ -199,10 +204,12 @@ header {
     border: 0px solid white;
     margin: 20px;
     box-shadow: 8px 8px 5px $shadow1;
+    transform: scale(1);
+    transition: transform 400ms;
 
     &:hover {
         box-shadow:5px 5px 5px $shadow2;
-        transition-duration: 1s;
+        transform: scale(1.05);
     }
 
     &__new {
@@ -217,6 +224,7 @@ header {
         padding: 10px;
         font-size: 18px;
         font-family: 'Roboto', sans-serif;
+        font-weight: bold;
     }
     
     &__img {
@@ -254,22 +262,21 @@ header {
         position: absolute;
     }
     .fas {
-        background: linear-gradient($primary-color, $secondary-color);
+        background: linear-gradient( $secondary-color,$primary-color);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         opacity: 0;
+        transform: scale(0.25);
+        transition: transform 400ms;
     }
     .fas:hover {
-        animation: 300ms linear forwards hearthover;
-        filter: brightness(120%);
+        animation: 400ms forwards hearthover;
+        transform: scale(1.05);
+        
     }
-
     @keyframes hearthover {
-        0% 
-        {
-            opacity: 0;
-        }
+
         100% 
         {
             opacity: 1;

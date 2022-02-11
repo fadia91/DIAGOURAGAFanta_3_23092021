@@ -32,8 +32,8 @@ body {
   /*pour résoudre le problème des liens*/
   opacity: 1;
   z-index: 15;
-  animation: fade 500ms 3s forwards;
-  -webkit-animation: fade 500ms 3s forwards;
+  animation: fade 400ms 2s forwards;
+  -webkit-animation: fade 400ms 2s forwards;
 }
 
 @-webkit-keyframes fade {
@@ -92,6 +92,7 @@ h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
   margin-bottom: 0px;
+  margin-left: 30px;
 }
 
 p {
@@ -181,15 +182,21 @@ header {
   padding: 10px;
   -webkit-box-shadow: 5px 5px 5px #e7e7e7;
           box-shadow: 5px 5px 5px #e7e7e7;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
 }
 
 .intro__btn:hover {
   -webkit-filter: brightness(120%);
           filter: brightness(120%);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-box-shadow: 5px 5px 5px gray;
           box-shadow: 5px 5px 5px gray;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
 }
 
 .intro__btn a {
@@ -218,8 +225,12 @@ header {
   -webkit-box-shadow: 5px 5px 5px #e7e7e7;
           box-shadow: 5px 5px 5px #e7e7e7;
   cursor: pointer;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
   text-decoration: none;
   color: black;
 }
@@ -228,6 +239,11 @@ header {
   -webkit-box-shadow: 5px 5px 5px gray;
           box-shadow: 5px 5px 5px gray;
   background-color: #f73bc827;
+  color: #9356DC;
+  font-weight: bold;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  box-shadow: 5px 5px 5px gray;
 }
 
 .list__item:hover .fas {
@@ -266,13 +282,19 @@ header {
   margin: 20px;
   -webkit-box-shadow: 8px 8px 5px #e7e7e7;
           box-shadow: 8px 8px 5px #e7e7e7;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
 }
 
 #Restaurants .card:hover {
   -webkit-box-shadow: 5px 5px 5px gray;
           box-shadow: 5px 5px 5px gray;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #Restaurants .card__new {
@@ -288,6 +310,7 @@ header {
   padding: 10px;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 #Restaurants .card__img {
@@ -333,34 +356,34 @@ header {
 }
 
 #Restaurants .card .fas {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
 }
 
 #Restaurants .card .fas:hover {
-  -webkit-animation: 300ms linear forwards hearthover;
-          animation: 300ms linear forwards hearthover;
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
+  -webkit-animation: 400ms forwards hearthover;
+          animation: 400ms forwards hearthover;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @-webkit-keyframes hearthover {
-  0% {
-    opacity: 0;
-  }
   100% {
     opacity: 1;
   }
 }
 
 @keyframes hearthover {
-  0% {
-    opacity: 0;
-  }
   100% {
     opacity: 1;
   }

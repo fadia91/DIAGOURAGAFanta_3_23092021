@@ -70,6 +70,7 @@ h4, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /*Btn commander*/
 }
 
 .menu__titre {
@@ -96,34 +97,34 @@ h4, p {
 }
 
 .menu .coeurs .fas {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
 }
 
 .menu .coeurs .fas:hover {
-  animation: 300ms linear forwards hearthover;
-  -webkit-animation: 300ms linear forwards hearthover;
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
+  -webkit-animation: 400ms forwards hearthover;
+          animation: 400ms forwards hearthover;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @-webkit-keyframes hearthover {
-  0% {
-    opacity: 0;
-  }
   100% {
     opacity: 1;
   }
 }
 
 @keyframes hearthover {
-  0% {
-    opacity: 0;
-  }
   100% {
     opacity: 1;
   }
@@ -146,6 +147,12 @@ h4, p {
   margin: 50px;
   -webkit-box-shadow: 5px 5px 5px #e7e7e7;
           box-shadow: 5px 5px 5px #e7e7e7;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
 }
 
 .menu__btn:hover {
@@ -153,8 +160,10 @@ h4, p {
           filter: brightness(120%);
   -webkit-box-shadow: 5px 5px 5px gray;
           box-shadow: 5px 5px 5px gray;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-animation: 400ms forwards hearthover;
+          animation: 400ms forwards hearthover;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .menu__btn a {
@@ -323,7 +332,7 @@ h4, p {
   }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(0);
+    transform: rotate(360);
   }
 }
 
@@ -334,7 +343,7 @@ h4, p {
   }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(0);
+    transform: rotate(360);
   }
 }
 
