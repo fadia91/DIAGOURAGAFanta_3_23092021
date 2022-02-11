@@ -167,7 +167,6 @@ header {
         color: $primary-color;
         font-weight: bold;
         transform: scale(1.05);
-        box-shadow:5px 5px 5px $shadow2;
     }
     &:hover .fas {
         color: $primary-color;
@@ -209,6 +208,8 @@ header {
 
     &:hover {
         box-shadow:5px 5px 5px $shadow2;
+        color: $primary-color;
+        font-weight: bold;
         transform: scale(1.05);
     }
 
@@ -271,6 +272,7 @@ header {
         transition: transform 400ms;
     }
     .fas:hover {
+        -webkit-animation: 400ms forwards hearthover;
         animation: 400ms forwards hearthover;
         transform: scale(1.05);
         

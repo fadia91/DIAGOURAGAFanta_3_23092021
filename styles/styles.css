@@ -243,7 +243,6 @@ header {
   font-weight: bold;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  box-shadow: 5px 5px 5px gray;
 }
 
 .list__item:hover .fas {
@@ -293,6 +292,8 @@ header {
 #Restaurants .card:hover {
   -webkit-box-shadow: 5px 5px 5px gray;
           box-shadow: 5px 5px 5px gray;
+  color: #9356DC;
+  font-weight: bold;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -372,7 +373,7 @@ header {
 
 #Restaurants .card .fas:hover {
   -webkit-animation: 400ms forwards hearthover;
-          animation: 400ms forwards hearthover;
+  animation: 400ms forwards hearthover;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
